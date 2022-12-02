@@ -22,9 +22,7 @@ def partitionSort(l):
 		else:
 			right.append(i)
 
-	print(f'List Contents: {left}, {pivot}, {right}')
-
 	return combineList(partitionSort(left), partitionSort(right), pivot)
 
 
-print(f'List: {partitionSort([0, 2, 1, 4, 5, 3, 6, 9, 0, 8, 7])}')
+print(f'List: {partitionSort([0, 2, 1, 4, 5, 3, 6, 9, 8, 7])}')
